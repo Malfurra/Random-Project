@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <h2>CEK KHODAM ANDA</h2>
+
+
+<div id="waktu">
+  <p></p>
+</div>
+
+  <div class="isi">
+    <form id="khodamForm" onsubmit="return suki()">
+      <input type="search" id="namaLengkap" name="namaLengkap" class="input" placeholder="Isi nama" required><br><br>
+      
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="closePopup()">&times;</div>
+          <br>
+          <h1>SELAMAT ✨</h1>
+          <p id="nama"></p>
+        </div>
+      </div>
+
+      <button type="submit">
+        <span>Cek Sekarang</span>
+      </button>
+    </form>
+  </div>
+
+  <script src="cekkodam.js"></script>
+</body>
+</html>
