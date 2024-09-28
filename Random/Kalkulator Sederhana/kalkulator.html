@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sukiweb</title>
+</head>
+<body>
+  
+  <p>
+    <label for="">Kalkulator :</label><br>
+    <input id="hasil1" type="search" placeholder="Masukan Angka">
+    
+ = <span id="hasil"></span>
+ 
+ 
+  <p id="suki">
+     <label for="">Hitung :</label>
+     <button onclick="jumlah()" id="penjumlahan" type="submit">+</button>
+     <button onclick="kurang()" id="pengurangan" type="submit">-</button>
+     <button onclick="bagi()" id="pembagian" type="submit">/</button>
+     <button onclick="kali()" id="perkalian" type="submit">*</button>
+     </p>
+ 
+  <button onclick="luasLingkaran()" id="lingkaran" type="submit">Luas Lingkaran</button>
+  <button onclick="luasPersegi()" id="persegi" type="submit">Luas Persegi</button>
+
+  
+  <p><button onclick="reset()" id="reset" type="reset">Reset</button></p>
+  
+  <p id="waktu"></p>
+  
+  <script src="kalkulator.js"></script>
+</body>
+  </html>
