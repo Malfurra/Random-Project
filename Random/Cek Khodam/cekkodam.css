@@ -1,0 +1,129 @@
+    .isi {
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 100px 50px;
+      box-shadow: 0 8px 32px 0 black;
+    }
+
+    .input {
+      border: none;
+      padding: 1rem;
+      border-radius: 1rem;
+      background: #e8e8e8;
+      box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
+      transition: 0.3s;
+    }
+
+    .input:focus {
+      outline-color: #e8e8e8;
+      background: #e8e8e8;
+      box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+      transition: 0.3s;
+    }
+
+    button {
+      padding: 0.1em 0.25em;
+      width: 13em;
+      height: 4.2em;
+      background-color: #212121;
+      border: 0.08em solid #fff;
+      border-radius: 0.3em;
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 10%;
+      margin-left: 12%;
+    }
+
+    button span {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0.4em;
+      width: 8.25em;
+      height: 2.5em;
+      background-color: #212121;
+      border-radius: 0.2em;
+      font-size: 1.5em;
+      color: #fff;
+      border: 0.08em solid #fff;
+      box-shadow: 0 0.4em 0.1em 0.019em #fff;
+    }
+
+    button span:hover {
+      transition: all 0.5s;
+      transform: translate(0, 0.4em);
+      box-shadow: 0 0 0 0 #fff;
+    }
+
+    button span:not(hover) {
+      transition: all 1s;
+    }
+
+    h2 {
+      position: absolute;
+      top: 11%;
+      left: 19%;
+      color: white;
+      background-color: black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-shadow: 0 8px 32px 0 black;
+      padding-left: 10px;
+      padding-right: 10px;
+      transform: translate(-11%, -19%);
+    }
+
+    /* Popup rekk */
+    .popup .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      display: none;
+    }
+
+    .popup .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: #fff;
+      width: 450px;
+      height: 220px;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 300ms ease-in-out;
+    }
+
+    .popup .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 30px;
+      background: #222;
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .popup.active .overlay {
+      display: block;
+    }
+
+    .popup.active .content {
+      transform: translate(-50%, -50%) scale(1);
+    }
+/*iki pop up anjeng*/
